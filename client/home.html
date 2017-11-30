@@ -1,0 +1,27 @@
+<template name="Home">
+
+
+    <h1>
+        ICI la page home 
+    </h1>
+    
+    <form>
+    <input type="text"  name="nom" id="nom" />
+    <input type="submit" value="ajouter"/>
+    </form>
+
+
+    <ul>
+
+            {{#each Client}}
+            <br>
+            <li class="list-group-item">{{Name  }}  </li>
+            <button id="update">update</button>
+            <button id="delete">delete</button>
+            <br>
+       
+            {{/each}}
+        
+    </ul>
+
+</template>
